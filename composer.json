@@ -1,0 +1,16 @@
+{
+    "name": "tolik/phpmvc-framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anatoliy Pavlenko",
+            "email": "fenixdurangoadrenalin@gmail.com"
+        }
+    ],
+    "require": {}
+}
