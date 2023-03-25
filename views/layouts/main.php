@@ -14,12 +14,20 @@
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
                     </li>
                 </ul>
             </div>
