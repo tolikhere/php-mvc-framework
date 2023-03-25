@@ -45,7 +45,8 @@ class Router
             [$class, $method] = $callback;
 
             if (class_exists($class)) {
-                $class = new $class();
+                Application::$app->controller = new $class();
+                $class = Application::$app->controller;
 
                 if (method_exists($class, $method)) {
                     return call_user_func_array([$class, $method], [$this->request]);
@@ -73,8 +74,9 @@ class Router
 
     protected function layoutContent()
     {
+        $layout = Application::$app->controller->layout;
         ob_start();
-        include_once Application::$ROOT_DIR . "/views/layouts/main.php";
+        include_once Application::$ROOT_DIR . "/views/layouts/{$layout}.php";
         return ob_get_clean();
     }
 
